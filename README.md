@@ -1,39 +1,64 @@
 # connect-fonts-drsugiyama
 
-A [connect-fonts](https://github.com/shane-tomlinson/connect-fonts) fontpack for the Dr Sugiyama font.
+Dr Sugiyama fontpack for [connect-fonts](https://github.com/shane-tomlinson/connect-fonts).
 
 ## Usage
 
 1. Include [connect-fonts](https://github.com/shane-tomlinson/connect-fonts) in a node module.
-```
+```js
 const font_middleware = require("connect-fonts");
 ```
 
 2. Include the font packs that you want to serve.
-```
-const drsugiyama = require("connect-fonts-drsugiyama");
+```js
+const font_pack  = require("connect-fonts-drsugiyama");
 ```
 
 3. Add a middleware by calling the `setup` function.
-```
+```js
     app.use(font_middleware.setup({
-      fonts: [ drsugiyama ],
+      fonts: [ font_pack ],
       allow_origin: "https://exampledomain.com"
     }));
 ```
 
 4. Add a link tag to include the font CSS.
+```html
+<link href="/drsugiyama-regular/fonts.css" type="text/css" rel="stylesheet"/ >
 ```
-    <link href="/en/drsugiyama/fonts.css" type="text/css" rel="stylesheet"/ >
+
+
+Available fonts:
+* drsugiyama-regular
+
+Locale-optimised font sets can be served by specifying the locale in the fonts.css URL.
+```html
+<link href="/latin/drsugiyama-regular/fonts.css" type="text/css" rel="stylesheet"/ >
 ```
+
+Available subsets:
+* latin
 
 5. Set your CSS up to use the new font by using the "Dr Sugiyama" font-family.
 ```
-   body {
-     font-family: 'Dr Sugiyama', 'sans-serif', 'serif';
-   }
+    body {
+      font-family: 'Dr Sugiyama', 'sans-serif', 'serif';
+    }
 ```
 
+## Font Info
+Dr Sugiyama
+
+* Copyright: Copyright (c) 2004 Alejandro Paul (sudtipos@sudtipos.com),with Reserved Font Name "Dr Sujiyama"
+* Trademark: Dr Sujiyama is a trademark of Alejandro Paul.
+* Designer: Alejandro Paul
+* Designer URL: http://www.sudtipos.com 
+* Vendor: Alejandro Paul
+* Vendor URL: http://www.sudtipos.com
+
+## Development Info
+* Homepage: https://github.com/shane-tomlinson/connect-fonts-drsugiyama
+* Repo: https://github.com/shane-tomlinson/connect-fonts-drsugiyama
 
 ## Author
 * Shane Tomlinson
@@ -41,22 +66,18 @@ const drsugiyama = require("connect-fonts-drsugiyama");
 * stomlinson@mozilla.com
 * set117@yahoo.com
 * https://shanetomlinson.com
-* http://github.com/stomlinson
-* http://github.com/shane-tomlinson
+* https://github.com/shane-tomlinson
+* https://github.com/stomlinson
 * @shane_tomlinson
 
-## Credits
-
-Original font set downloaded from Google Font Directory. Dr Sugiyama created by [Alejandro Paul](sudtipos@sudtipos.com)
 
 ## License
 
-This software is licenced under version 2.0 of the MPL
+Software: Licenced under version 2.0 of the MPL
 
   https://www.mozilla.org/MPL/
 
-Fonts are licensed under version 1.1 of the SIL Open Font License
+Fonts: Licensed under version 1.1 of the SIL Open Font License
 
   http://scripts.sil.org/OFL
-
 

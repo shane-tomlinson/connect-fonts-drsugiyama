@@ -1,19 +1,29 @@
 {
   "Author": "Shane Tomlinson <shane@shanetomlinson.com> (https://shanetomlinson.com)",
   "name": "connect-fonts-drsugiyama",
-  "description": "Dr Sugiyama font set for connect-fonts",
-  "keywords": ["font", "font-face", "CSS", "DrSugiyama", "Dr Sugiyama", "connect-fonts"],
+  "description": "Dr Sugiyama font pack for connect-fonts",
+  "keywords": ["font", "font-face", "CSS", "connect-fonts", "drsugiyama-regular"],
   "homepage": "https://github.com/shane-tomlinson/connect-fonts-drsugiyama",
+  "licenses": [
+    {
+      "covers": "software",
+      "type": "MPL-2.0",
+      "url": "http://mozilla.org/MPL/2.0/"
+    },
+    {
+      "covers": "fonts",
+      "type": "OFL-1.1",
+      "url": "http://scripts.sil.org/OFL"
+    }
+  ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/shane-tomlinson/connect-fonts-drsugiyama.git"
+    "url": "https://github.com/shane-tomlinson/connect-fonts-drsugiyama"
   },
-  "bugs": {
-    "url": "https://github.com/shane-tomlinson/connect-fonts-drsugiyama/issues"
-  },
-  "version": "0.0.1",
+  "version": "0.0.2",
   "engines": {
     "node": ">= 0.4.7"
   },
   "main": "index"
 }
+
